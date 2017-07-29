@@ -20,6 +20,10 @@ import (
 // }
 // thus, these type would be `reference type`!
 
+// But, actually, there is no reference type in Golang.
+// as the reference type ONLY bind the address
+// map, slice, channel, always copy the pointer instead!
+
 func changeArrayValue(testValue [6]int) {
 	testValue[0] = 1
 }
