@@ -11,9 +11,10 @@ protoc -I customer/ customer/customer.proto --go_out=plugins=grpc:customer
 
 ```
 # for server side
+go run server.go
 ```
 
 ```
 # for client side
-
+go run client.go
 ```
