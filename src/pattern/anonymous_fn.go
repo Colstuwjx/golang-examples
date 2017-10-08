@@ -37,6 +37,6 @@ func main() {
 		"Cathy",
 	}
 
-	filtered := filter(src, filterONLYJacky(item))
-	fmt.Println("Filtered values: ", filtered)
+	filtered := filter(src, filterONLYJacky)
+	fmt.Printf("Filtered values: %v\n", filtered)
 }
