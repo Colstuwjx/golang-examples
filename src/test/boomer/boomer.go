@@ -48,7 +48,7 @@ func test_dns() {
 	addrs, err := net.LookupHost("www.baidu.com")
 	endTime := now()
 
-	log.Println(float64(endTime - startTime))
+	log.Println("resolving www.baidu.com.. cost time: ", float64(endTime-startTime))
 	if err != nil {
 		boomer.Events.Publish("request_failure", "dns", "udp", 0.0, err.Error())
 	} else {
